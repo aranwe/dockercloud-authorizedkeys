@@ -3,6 +3,7 @@ if [ "${AUTHORIZED_KEYS}" != "**None**" ]; then
     echo "=> Found authorized keys"
     mkdir -p /user/.ssh
     chmod 700 /user/.ssh
+	rm -f /user/.ssh/authorized_keys 2> /dev/null
     touch /user/.ssh/authorized_keys
     chmod 600 /user/.ssh/authorized_keys
     IFS=$'\n'

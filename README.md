@@ -1,5 +1,9 @@
 # authorizedkeys
 
+## Foreword
+This is fork of [dockercloud/dockercloud-authorizedkeys](https://github.com/docker/dockercloud-authorizedkeys)
+This image purges all already existing keys upon running.
+
 [![Deploy to Docker Cloud](https://files.cloud.docker.com/images/deploy-to-dockercloud.svg)](https://cloud.docker.com/stack/deploy/)
 
 Adds a user public SSH key to the host's `~/.ssh/authorized_keys` using a container
